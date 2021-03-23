@@ -3,11 +3,13 @@ import Tmdb from "../../tmdb";
 import { Container, List } from "./styles.js";
 import MovieRow from "../MovieRow";
 import Header from "../Header";
+import Footer from '../Footer';
 import DestakMovie from "../DestakMovie";
 
 export default () => {
   const [movieList, setMovieList] = useState([]);
   const [destakData, setDestakData] = useState(null);
+  const [blackHeader, setBlackHeader] = useState(false);
 
   useEffect(() => {
     const loadAll = async () => {
@@ -25,15 +27,31 @@ export default () => {
     loadAll();
   }, []);
 
+  useEffect(() => {
+    const scrollListener = () => {
+      if (window.scrollY > 10) {
+        setBlackHeader(true);
+      } else {
+        setBlackHeader(false);
+      }
+    };
+
+    window.addEventListener("scroll", scrollListener);
+    return () => {
+      window.removeEventListener("scroll", scrollListener);
+    };
+  }, []);
+
   return (
     <Container>
-      <Header />
+      <Header black={blackHeader} />
       {destakData && <DestakMovie item={destakData} />}
       <List>
         {movieList.map((item, key) => (
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </List>
+      <Footer />
     </Container>
   );
 };
