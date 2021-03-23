@@ -47,8 +47,8 @@ export default () => {
       <Header black={blackHeader} />
       {destakData && <DestakMovie item={destakData} />}
       <List>
-        {movieList.map((item, key) => (
-          <MovieRow key={key} title={item.title} items={item.items} />
+        {movieList.map((item) => (
+          <MovieRow key={item.id} title={item.title} items={item.items} />
         ))}
       </List>
       <Footer />
