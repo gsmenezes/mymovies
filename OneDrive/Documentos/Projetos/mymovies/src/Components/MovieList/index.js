@@ -3,8 +3,9 @@ import Tmdb from "../../tmdb";
 import { Container, List } from "./styles.js";
 import MovieRow from "../MovieRow";
 import Header from "../Header";
-import Footer from '../Footer';
+import Footer from "../Footer";
 import DestakMovie from "../DestakMovie";
+import Loading from "../Loading";
 
 export default () => {
   const [movieList, setMovieList] = useState([]);
@@ -52,6 +53,7 @@ export default () => {
         ))}
       </List>
       <Footer />
+      {movieList.length <= 0 && <Loading />}
     </Container>
   );
 };
