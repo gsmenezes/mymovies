@@ -19,11 +19,19 @@ export const Container = styled.div`
     justify-content: center;
     padding: 70px 30px 150px 30px;
   }
+
+  @media (max-width: 768px) {
+    height: 90vh;
+  }
 `;
 
 export const MovieTitle = styled.div`
   font-size: 40px;
   font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const MovieDate = styled.div`
@@ -35,6 +43,10 @@ export const MovieInfo = styled.div`
   font-weight: bold;
   margin-top: 15px;
   display: inline-flex;
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+  }
 `;
 
 export const MovieSeasons = styled.div`
@@ -51,12 +63,22 @@ export const MovieOverview = styled.div`
   color: #999;
   font-size: 16px;
   max-width: 40%;
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+    max-width: 100%;
+    margin-right: 30px;
+  }
 `;
 
 export const MovieGenres = styled.div`
   margin-top: 15px;
   color: #999;
   font-size: 15px;
+
+  @media (max-width: 768px) {
+    font-size: 0.675rem;
+  }
 `;
 
 export const Buttons = styled.div`
@@ -83,5 +105,11 @@ export const Buttons = styled.div`
   }
   a:hover {
     opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
+    a {
+      font-size: 0.875rem;
+    }
   }
 `;

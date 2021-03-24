@@ -18,6 +18,11 @@ export default ({ item }) => {
     genres.push(item.genres[i].name);
   }
 
+  let overview = item.overview;
+  if (overview.length > 200) {
+    overview = overview.substring(0, 250) + "...";
+  }
+
   return (
     <Container
       style={{
@@ -35,7 +40,7 @@ export default ({ item }) => {
               {item.number_of_seasons !== 1 ? "s" : ""}
             </MovieSeasons>
           </MovieInfo>
-          <MovieOverview>{item.overview}</MovieOverview>
+          <MovieOverview>{overview}</MovieOverview>
           <Buttons>
             <a href={`/watch/${item.id}`} className="watch">
               ► Assistir

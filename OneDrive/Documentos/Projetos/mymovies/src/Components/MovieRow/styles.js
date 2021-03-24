@@ -20,7 +20,7 @@ export const Container = styled.div`
     overflow: hidden;
     cursor: pointer;
     opacity: 0;
-    transition: all ease .3s;
+    transition: all ease 0.3s;
   }
 
   .leftarrow {
@@ -35,6 +35,13 @@ export const Container = styled.div`
   &:hover .rightarrow {
     opacity: 1;
   }
+
+  @media (max-width: 768px) {
+    .rightarrow,
+    .leftarrow {
+      opacity: 1;
+    }
+  }
 `;
 
 export const ListArea = styled.div`
@@ -43,7 +50,7 @@ export const ListArea = styled.div`
 `;
 
 export const ListMovie = styled.div`
-transition: all ease .3s;
+  transition: all ease 0.3s;
 `;
 
 export const MovieItem = styled.div`
@@ -60,21 +67,4 @@ export const MovieItem = styled.div`
   img:hover {
     transform: scale(1);
   }
-`;
-
-export const LeftArrow = styled.div``;
-
-export const RightArrow = styled.div`
-  position: absolute;
-  width: 40px;
-  height: 225px;
-  background-color: #00000090;
-
-  z-index: 99;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  cursor: pointer;
-  opacity: 0;
 `;
