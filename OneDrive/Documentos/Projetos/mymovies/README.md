@@ -81,4 +81,4 @@ Feito com :heart: por <a href="https://github.com/gsmenezes" target="_blank">gi 
 <a href="#top">Voltar para o topo</a>
 </p>
 
- ![Print da tela](/public/screenshot.png)
+ ![Print da tela](public/screenshot.png)
