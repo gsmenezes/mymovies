@@ -1,70 +1,78 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">My Movies</h1>
 
-## Available Scripts
+<p align="center">
+  <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/gsmenezes/mymovies?color=56BEB8">
 
-In the project directory, you can run:
+  <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/gsmenezes/mymovies?color=56BEB8">
 
-### `yarn start`
+  <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/gsmenezes/mymovies?color=56BEB8">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <img alt="Licença" src="https://img.shields.io/github/license/gsmenezes/mymovies?color=56BEB8">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+</p>
 
-### `yarn test`
+<p align="center">
+  <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0;
+  <a href="#sparkles-funcionalidades">Funcionalidades</a> &#xa0; | &#xa0;
+  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-pré-requesitos">Pré requisitos</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-começando">Começando</a> &#xa0; | &#xa0;
+  <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
+  <a href="https://github.com/gsmenezes" target="_blank">Autor</a>
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `yarn build`
+## :dart: Sobre ##
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+My Movies é um projeto clone do Netflix, utilizando a API do TMDB para a lista e informações dos filmes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :sparkles: Funcionalidades ##
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+:heavy_check_mark: Listagem de Filmes
+:heavy_check_mark: Filmes em destaque
+:heavy_check_mark: Detalhes do Filme (em construção)
+:heavy_check_mark: Filmes favoritos (em construção)
 
-### `yarn eject`
+## :rocket: Tecnologias ##
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+As seguintes ferramentas foram usadas na construção do projeto:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [React](https://pt-br.reactjs.org/)
+- [Javascript](https://www.javascript.com/)
+- [Styled Components](https://styled-components.com/)
+- [The Movie DB API](https://developers.themoviedb.org/3/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## :white_check_mark: Pré requisitos ##
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Antes de começar :checkered_flag:, você precisa ter o [Node](https://nodejs.org/en/) instalado em sua maquina.
 
-## Learn More
+## :checkered_flag: Começando ##
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Clone este repositório
+$ git clone https://github.com/gsmenezes/mymovies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Entre na pasta
+$ cd mymovies
 
-### Code Splitting
+# Instale as dependências
+$ yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Para iniciar o projeto
+$ yarn start
 
-### Analyzing the Bundle Size
+# O app vai inicializar em <http://localhost:3000>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## :memo: Licença ##
 
-### Making a Progressive Web App
+Este projeto está sob licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+Feito com :heart: por <a href="https://github.com/gsmenezes" target="_blank">gi menezes</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+&#xa0;
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="#top">Voltar para o topo</a>
