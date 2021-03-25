@@ -26,7 +26,7 @@
 
 ## :dart: Sobre ##
 
-My Movies é um projeto clone do Netflix, utilizando a API do TMDB para a lista e informações dos filmes.
+My Movies é um projeto inspirado no Netflix, utilizando a API do TMDB para a lista e informações dos filmes.
 
 ## :sparkles: Funcionalidades ##
 
@@ -71,8 +71,14 @@ $ yarn start
 Este projeto está sob licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 
+
+<p align="center">
+
 Feito com :heart: por <a href="https://github.com/gsmenezes" target="_blank">gi menezes</a>
 
 &#xa0;
 
 <a href="#top">Voltar para o topo</a>
+</p>
+
+ ![Print da tela](/public/screenshot.png)
